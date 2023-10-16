@@ -60,7 +60,7 @@ ROOT_URLCONF = 'Storeproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\\Users\\ASUS\\Documents\\Django_Project\\Storeproject\\FirstProject\\templates'],
+        'DIRS': ['C:\\Users\\Lenovo\\Desktop\\New folder'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
