@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ติดต่อเรา</title>
+</head>
+<body>
+    <header>
+        <h1>ติดต่อเรา</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">หน้าแรก</a></li>
+            <li><a href="/สินค้า">สินค้า</a></li>
+            <li><a href="/ติดต่อ">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>ข้อมูลติดต่อ</h2>
+            <p>หากคุณมีคำถามหรือข้อสงสัยเกี่ยวกับสินค้าหรือบริการของเรา โปรดติดต่อเราผ่านช่องทางดังนี้:</p>
+            <ul>
+                <li>อีเมล: <a href="mailto:info@example.com">info@example.com</a></li>
+                <li>โทรศัพท์: +66 2 123 4567</li>
+                <li>ที่อยู่: 123 ถนนเทสท์, แขวงสุขุมวิท, เขตคลองเตย, กรุงเทพฯ 10110</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>แบบฟอร์มติดต่อ</h2>
+            <form action="/submit_contact" method="post">
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="ส่งข้อความ">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ปี 2023 ร้านค้าออนไลน์</p>
+    </footer>
+</body>
+</html>

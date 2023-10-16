@@ -1,0 +1,19 @@
+/* เลือกองค์ประกอบ HTML ด้วย selector */
+body {
+    /* กำหนดสีพื้นหลัง */
+    background-color: lightblue;
+  }
+  
+  h1 {
+    /* กำหนดสีข้อความและขนาดฟอนต์ */
+    color: darkblue;
+    font-size: 24px;
+  }
+  
+  p {
+    /* กำหนดสีข้อความและขนาดฟอนต์ */
+    color: green;
+    font-size: 16px;
+  }
+  
+  
