@@ -6,7 +6,7 @@
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-    <title>Animal WorlD</title>
+    <title>Pet Shop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,13 +26,13 @@
     <div class="container bg-light p-2 my-2">
 
         <div class="headpic p-4 text-white rounded-3">
-    <h1>Animal WorlD </h1>
+    <h1>Pet Shop </h1>
     <h5>อำเภอบ้านโป่ง จ.ราชบุรี</h5>
   </div><nav class="navbar navbar-expand-lg navbar-light my-1">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="{% static 'FirstProject/Logo.jpg'%}" alt="" width="50" class="d-inline-block align-text-center rounded-3">
-            Animal WorlD
+            Pet Shop
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,23 +40,27 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link " href="/"><i class="bi bi-house"></i> หน้าแรก</a>
+                    <a class="nav-link active" href="/"><i class="bi bi-house"></i> หน้าแรก</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="history.php"><i class="bi bi-emoji-kiss"></i> ประวัติของเรา</a>
+                    <a class="nav-link " href="/aboutour"><i class="bi bi-emoji-kiss"></i> ประวัติของเรา</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="product_list_for_customer.php"><i class="bi bi-emoji-smile"></i>สินค้าของเรา</a>
+                    <a class="nav-link " href="/dogfood"><i class="bi bi-emoji-smile"></i>อาหารของสุนัข</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/dogtoy"><i class="bi bi-emoji-smile"></i>ของเล่นของสุนัข</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-card-checklist"></i> ลงชื่อเข้าใช้
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="login.php">เข้าสู่ระบบ</a></li>
-                        <li><a class="dropdown-item" href="product_list_for_admin.php">รายการสินค้า</a></li>
-                        <li><a class="dropdown-item" href="product_add_form.php">เพิ่มสินค้า</a></li>
-                        <li><a class="dropdown-item" href="logout.php">ออกจากระบบ</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/catfood"><i class="bi bi-emoji-kiss"></i> อาหารของแมว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/cattoy"><i class="bi bi-emoji-kiss"></i> ของเล่นของแมว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/log"><i class="bi bi-emoji-kiss"></i> เข้าสู่ระบบ</a>
+                    </li>
  
                     </ul>
                 </li>
@@ -75,7 +79,11 @@
                     โดยเริ่มแรกมักนำมาเลี้ยงและใช้เป็นสัตว์คุ้มกัน เพราะสุนัขถือว่าเป็นสัตว์เรื่องที่เชื่องสอนง่าย 
                     แต่ล่ะสายพันธุ์ของมีความหลากหลายทั้งในรูปร่างและขนาดที่ไม่แพ้กันเมื่อถึงลักษณะทางกายภาพ 
                     ตั้งแต่ขนสั้นจนถึงขนยาว สีหลากหลาย รวมถึงขนาดที่แตกต่างกันออกไป สุนัขเป็นสัตว์เลี้ยงที่เป็นที่นิยมมากในทั่วโลก 
-                    เป็นเพื่อนแท้ของมนุษย์มาเป็นพันปี เป็นสัตว์เลี้ยงที่ใกล้ชิดมนุษย์และจงรักภักดีกับเจ้าของแบบถวายชีวิตเลยว่าได้</p>
+                    เป็นเพื่อนแท้ของมนุษย์มาเป็นพันปี เป็นสัตว์เลี้ยงที่ใกล้ชิดมนุษย์และจงรักภักดีกับเจ้าของแบบถวายชีวิตเลยว่าได้
+                    แมว (ชื่อวิทยาศาสตร์: Felis catus) เป็นสปีชีส์สัตว์เลี้ยงของสัตว์เลี้ยงลูกด้วยนมกินเนื้อขนาดเล็ก โดยเป็นแมวสปีชีส์เดียวในวงศ์ Felidae 
+                    ที่ถูกปรับเป็นสัตว์เลี้ยง และมักเรียกเป็น แมวบ้าน เพื่อแยกมันจากสมาชิกที่อยู่ในป่าแมวเหล่านี้สามารถอาศัยเป็นแมวบ้าน, แมวฟาร์ม หรือแมวจรได้ 
+                    แต่แมวประเภทหลังสุดมักอาศัยอยู่อย่างอิสระและหลีกเลี่ยงการติดต่อกับมนุษย์ มนุษย์ให้ค่ากับแมวบ้านในฐานะคู่หูและความสามารถในการฆ่าสัตว์ฟันแทะ 
+                    สำนักจดทะเบียนแมว (cat registries) หลายแห่งยอมรับสายพันธุ์แมวประมาณ 60 สายพันธุ์</p>
                 
             </div>
 
@@ -102,7 +110,7 @@
         <a href="http://twitter.com" target="_blank"><img src="{% static 'FirstProject/Twitterlogo.png'%}" alt="" width="30px"></a>
     </div>
  
-    <p>Animal WorlD  อ.บ้านโป่ง จ.ราชบุรี 70110<br>โทร: 086 357 6901 | 089 966 2348</p>
+    <p>Pet Shop  อ.บ้านโป่ง จ.ราชบุรี 70110<br>โทร: 086 357 6901 | 089 966 2348</p>
  
 </div>
     </div>
