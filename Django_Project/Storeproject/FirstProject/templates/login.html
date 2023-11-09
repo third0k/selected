@@ -1,0 +1,274 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Legend Coffee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet"href="mycss.css">
+   
+  <!-- Bootstrap icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+
+    <!-- link for datatable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <!-- link for datatable -->
+</head>
+
+<body>
+    <div class="container bg-light p-2 my-2">
+
+        <div class="headpic p-4 text-white rounded-3">
+    <h1>Legend Coffee </h1>
+    <h5>อำเภอบ้านโป่ง จ.ราชบุรี</h5>
+  </div><nav class="navbar navbar-expand-lg navbar-light my-1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">
+            <img src="images/Logo.jpg" alt="" width="50" class="d-inline-block align-text-center rounded-3">
+            Legend Coffee
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.php"><i class="bi bi-house"></i> หน้าแรก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="history.php"><i class="bi bi-emoji-kiss"></i> ประวัติของเรา</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="product_list_for_customer.php"><i class="bi bi-cup-hot-fill"></i>เมนู</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-card-checklist"></i> ผู้ดูแลระบบ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="login.php">เข้าสู่ระบบ</a></li>
+                        <li><a class="dropdown-item" href="product_list_for_admin.php">รายการสินค้า</a></li>
+                        <li><a class="dropdown-item" href="product_add_form.php">เพิ่มสินค้า</a></li>
+                        <li><a class="dropdown-item" href="logout.php">ออกจากระบบ</a></li>
+ 
+                    </ul>
+                </li>
+            </ul>
+ 
+        </div>
+    </div>
+</nav>
+        
+            <div class="userinfo round-3">
+                <strong>ผู้ใช้งาน : </strong>ธีรภัทร หุ้นเอี่ยม            </div>
+            <h4 style="text-align: center;">รายการสินค้า</h4>
+            <hr>
+
+            <div class="table-responsive px-5">
+                <table id="producttable" class="table table-striped">
+                    <thead>
+                        <tr>
+
+                            <th>รหัสสินค้า</th>
+                            <th>ชื่อสินค้า</th>
+                            <th>ราคาสินค้า</th>
+                            <th>รูปสินค้า</th>
+                            <th>แก้ไข</th>
+                            <th>ลบ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                                                    <tr>
+
+                                <td>02</td>
+                                <td>เอสเพรสโซ่</td>
+                                <td>40</td>
+                                <td>
+                                    <img src="product_images/02.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=02">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=02" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>03</td>
+                                <td>โกโก้</td>
+                                <td>45</td>
+                                <td>
+                                    <img src="product_images/03.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=03">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=03" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>04</td>
+                                <td>ชาเขียวนม</td>
+                                <td>40</td>
+                                <td>
+                                    <img src="product_images/04.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=04">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=04" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>05</td>
+                                <td>กาเเฟส้ม</td>
+                                <td>45</td>
+                                <td>
+                                    <img src="product_images/05.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=05">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=05" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>06</td>
+                                <td>ลาเต้เย็น</td>
+                                <td>45</td>
+                                <td>
+                                    <img src="product_images/06.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=06">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=06" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>07</td>
+                                <td>เเฟรทไวท์</td>
+                                <td>45</td>
+                                <td>
+                                    <img src="product_images/07.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=07">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=07" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>08</td>
+                                <td>มัทฉะลาเต้</td>
+                                <td>45</td>
+                                <td>
+                                    <img src="product_images/08.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=08">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=08" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>09</td>
+                                <td>เสาวรสโซดา</td>
+                                <td>40</td>
+                                <td>
+                                    <img src="product_images/09.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=09">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=09" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>10</td>
+                                <td>ชาเย็น</td>
+                                <td>30</td>
+                                <td>
+                                    <img src="product_images/10.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=10">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=10" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>11</td>
+                                <td>ชาน้ำผึ้งมะนาว</td>
+                                <td>30</td>
+                                <td>
+                                    <img src="product_images/11.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=11">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=11" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>12</td>
+                                <td>ชาพีช</td>
+                                <td>30</td>
+                                <td>
+                                    <img src="product_images/12.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=12">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=12" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                                <tr>
+
+                                <td>13</td>
+                                <td>ชาเบอร์รี่</td>
+                                <td>30</td>
+                                <td>
+                                    <img src="product_images/13.JPG" class="img-thumbnail" width="50px" alt="product image">
+                                </td>
+                                <td><a href="product_edit_form.php?pid=13">แก้ไข</a></td>
+                                <td><a href="product_delete_save.php?pid=13" onclick="return confirm('คุณต้องการลบข้อมูลใช่หรือไม่?');">ลบ</a></td>
+
+                            </tr>
+                                        </tbody>
+                </table>
+
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary d-block m-auto" onclick="window.location.href='product_add_form.php'">เพิ่มสินค้า</button>
+            <br>
+
+
+            <div class="footer rounded-3 p-3 text-center">
+    <div>
+        <a href="http://facebook.com" target="_blank"><img src="imag/facebooklogo.png" alt="" width="30px"></a>
+        <a href="http://instragram.com" target="_blank"><img src="imag/instragramlogo.png" alt="" width="30px"></a>
+        <a href="http://twitter.com" target="_blank"><img src="imag/twitterlogo.png" alt="" width="30px"></a>
+    </div>
+ 
+    <p>Legend Coffee  อ.บ้านโป่ง จ.ราชบุรี 70110<br>โทร: 086 357 6901 | 089 966 2348</p>
+ 
+</div>
+    </div>
+
+
+
+    <!-- Java Script for datatable -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#producttable').DataTable();
+        });
+    </script>
+    <!-- Java Script for datatable -->
+
+
+
+<div style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-index:999999;cursor:pointer;line-height:0;display:block;"><a target="_blank" href="https://www.freewebhostingarea.com" title="Free Web Hosting with PHP5 or PHP7"><img alt="Free Web Hosting" src="https://www.freewebhostingarea.com/images/poweredby.png" style="border-width: 0px;width: 180px; height: 45px; float: right;"></a></div>
+</body>
+
+</html>

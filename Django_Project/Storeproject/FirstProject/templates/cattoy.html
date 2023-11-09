@@ -1,0 +1,200 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <title>Pet Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="{% static 'FirstProject/page4.css'%}">
+   
+  <!-- Bootstrap icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+
+    <!-- link for datatable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <!-- link for datatable -->
+
+</head>
+
+<body>
+
+    <div class="container bg-light p-2 my-2">
+        <div class="headpic p-4 text-white rounded-3">
+    <h1>Pet Shop </h1>
+    <h5>อำเภอบ้านโป่ง จ.ราชบุรี</h5>
+  </div><nav class="navbar navbar-expand-lg navbar-light my-1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'FirstProject/Logo.jpg'%}" alt="" width="50" class="d-inline-block align-text-center rounded-3">
+            Pet Shop
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/"><i class="bi bi-house"></i> หน้าแรก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/aboutour"><i class="bi bi-emoji-kiss"></i> ประวัติของเรา</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/dogfood"><i class="bi bi-emoji-smile"></i>อาหารของสุนัข</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/dogtoy"><i class="bi bi-emoji-smile"></i>ของเล่นของสุนัข</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/catfood"><i class="bi bi-emoji-kiss"></i> อาหารของแมว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/cattoy"><i class="bi bi-emoji-kiss"></i> ของเล่นของแมว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/log"><i class="bi bi-emoji-kiss"></i> เข้าสู่ระบบ</a>
+                    </li>
+ 
+                    </ul>
+                </li>
+            </ul>
+ 
+        </div>
+    </div>
+</nav>
+        
+
+        <h4 style="text-align: center;">รายการสินค้า</h4>
+        <hr>
+        <div class="table-responsive px-5">
+
+            <table id="producttable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>รหัสสินค้า</th>
+                        <th>ชื่อสินค้า</th>
+                        <th>ราคาสินค้า</th>
+                        <th>รูปสินค้า</th>
+                        <th>รายละเอียด</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                                            <tr>
+                            <td>01</td>
+                            <td>ลูกบอลแมว  </td>
+                            <td>35</td>
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR1HX8VTWlU1BfuTQ1s7rbRqk9xehg-obzRJlCvtiYp2oYxvJX48nmtpg8fkCJGy5Okiq5s-0cq48RIcoU-qc_z2c-EEvSH&usqp=CAE" class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=01">รายละเอียด</a></td>
+                        </tr>
+
+                                            <tr>
+                            <td>02</td>
+                            <td>แท่งแมวตลก  
+                            </td>
+                            <td>40</td>
+                            <td>
+                                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSixp8Vlz_3Li85M2FTcvgSST_6TSZPe9nDH_It3R0FBaefZCexwj1hZlbCo2jUZb4ELpxRdfPSaJjkRrTm_v2huADzRsgKCA&usqp=CAE" class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=02">รายละเอียด</a></td>
+                        </tr>
+
+                                            <tr>
+                            <td>03</td>
+                            <td>Fidoz​ factory​ ​ </td>
+                            <td>45</td>
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5ciY0Qejd05c2UKc_aRTCXVaOFAiwjmeKYzvfXH7tRNEtm9Y-656j_D-joLQm6CFltFWIrKnYzC-ajvVQ0kxM7WAvQyVJuA&usqp=CAE" class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=03">รายละเอียด</a></td>
+                        </tr>
+
+                                            <tr>
+                            <td>04</td>
+                            <td>Maddie  </td>
+                            <td>40</td>
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ474he4rtCi_BIp5LzwjwqNjM7cvf1wrv9owA9k0cRaxmeht5yyuUhDE4tqhcT3DU8yshNzwGODQiZaKp6Pka5xjApLg0vjg&usqp=CAE" class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=04">รายละเอียด</a></td>
+                        </tr>
+
+                                            <tr>
+                            <td>05</td>
+                            <td>ไม้ตกแมว  </td>
+                            <td>45</td>
+                            <td>
+                                <img src="{% static 'FirstProject/ไม้ตกแมว.jpg'%}"class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=05">รายละเอียด</a></td>
+                        </tr>
+
+                                            <tr>
+                            <td>06</td>
+                            <td>รางบอลแมว </td>
+                            <td>45</td>
+                            <td>
+                                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAu090PcfeSepW8LEJ4CEkOg5zghc3W6c1Py8YleNHq3eSq-CM3whY-ROzRilKxgdzp7yyZROMCMVvO8z0qKvSCXUrgZ9WNg&usqp=CAE" class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=06">รายละเอียด</a></td>
+                        </tr>
+
+                                            <tr>
+                            <td>07</td>
+                            <td>ปลาดุ๊กดิ๊ก   </td>
+                            <td>45</td>
+                            <td>
+                                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRUGn7juKHxGynhhp5HgbHdEn8GjfSuwTkXfaiToYoywlkQ6khrnFsx-daPqWaehiMa5mVZjOE_ZoKbB5OauItPmuFsr8YJmw&usqp=CAE" class="img-thumbnail" width="50px" alt="product image">
+                            </td>
+                            <td><a href="product_detail.php?pid=07">รายละเอียด</a></td>
+                        </tr>
+
+                                  
+
+                                    </tbody>
+            </table>
+        </div>
+
+        <div class="footer rounded-3 p-3 text-center">
+    <div>
+        <a href="http://facebook.com" target="_blank"><img src="imag/facebooklogo.png" alt="" width="30px"></a>
+        <a href="http://instragram.com" target="_blank"><img src="imag/instragramlogo.png" alt="" width="30px"></a>
+        <a href="http://twitter.com" target="_blank"><img src="imag/twitterlogo.png" alt="" width="30px"></a>
+    </div>
+ 
+    <p>Pet Shop  อ.บ้านโป่ง จ.ราชบุรี 70110<br>โทร: 086 357 6901 | 089 966 2348</p>
+ 
+</div>
+    </div>
+
+    <!-- Java Script for datatable -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#producttable').DataTable();
+        });
+    </script>
+    <!-- Java Script for datatable -->
+
+
+<div style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-index:999999;cursor:pointer;line-height:0;display:block;"><a target="_blank" href="https://www.freewebhostingarea.com" title="Free Web Hosting with PHP5 or PHP7"><img alt="Free Web Hosting" src="https://www.freewebhostingarea.com/images/poweredby.png" style="border-width: 0px;width: 180px; height: 45px; float: right;"></a></div>
+</body>
+
+</html>
